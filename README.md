@@ -23,3 +23,6 @@ $  docker-compose up -d
 Once done, login to morgue using the credentials `morgue:P0stm0rt3ms!`
 
 * Default url: <http://morgue.yourdomain.com/>
+
+# TODO
+- Change the auth for google https://cloudavail.com/2014/06/07/apache-auth-oidc-google-apps-2/
