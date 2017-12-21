@@ -1,0 +1,189 @@
+
+#ascii_logo{
+  margin-right: 10px;
+  float: left;
+}
+#ascii_logo a{
+  font-size: 12px;
+  line-height: 12px;
+  
+  display: block;
+  white-space: pre;
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  color: #fff;
+}
+#ascii_logo a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+#header {
+  background: #272822; 
+}
+
+div > .nav li > .nav_link {
+    margin-top: 40px;
+    color: #fff;
+    text-shadow: none;
+    font-size: 16px;
+}
+
+div > .nav li > .nav_link:hover {
+    color: #555;
+}
+
+.bigModal{
+  width:940px;
+  margin-left:-470px;
+}
+
+input.input-headline {
+  width: 98%;
+  font-size: 34px;
+  height: 40px;
+}
+
+input:disabled {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.editable{
+}
+
+.editable_hidden {
+}
+
+#saved_feedback {
+    margin-bottom: 0;
+    height: 9px;
+    line-height: 9px;
+}
+
+#titleinfo {
+  color: red;
+  text-align: left;
+  display: block;
+}
+
+a.jira_in_progress:link, a.jira_in_progress:visited {
+	color: green;
+}
+
+a.jira_closed:link, a.jira_closed:visited {
+	text-decoration: line-through;
+	color: gray;
+}
+
+a.jira_default {}
+
+.tag {
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
+}
+
+#tag_well>span.tag, #tag_paragraph>span.tag>a {
+  cursor: pointer;
+}
+
+#tag_paragraph {
+  width: 80%;
+}
+
+#tag_well {
+  margin-top:10px;
+}
+
+#contact_anchor {
+  margin-top: 10px;
+}
+
+#jira-link {
+  float: right;
+  font-size: 16px;
+}
+
+#markdown-link {
+  float: right;
+  font-size: 11px;
+}
+
+#summary {
+  width: 100%;
+}
+
+#why_surprised {
+  width: 100%;
+}
+
+.modal.fade {
+  /* this is needed because the hidden modal dom
+   * elements block access to the navbar links */
+  top: -125%;
+}
+
+
+#error_page {
+	padding: 10px;
+}
+
+#my-dropzone {
+    border: 4px dashed gray;
+    background-color: #daedfe;
+    font-size: 1.5em;
+    height: 10px;
+}
+
+#my-dropzone.dropzone {
+    min-height: 60px;
+    height: 60px;
+}
+
+.nactive {
+	color: white;
+	background-color: #daedfe;
+}
+.nav li {
+  position: relative;
+}
+.nav li .badge {
+position: absolute;
+top: 40px;
+right: 0;
+}
+
+#edit_status {
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+#search_div {
+  
+  margin-top: 40px;
+  margin-right: 15px;
+  width: 22%;
+  float: right;
+  min-width: 100px;
+}
+
+#search_field {
+    width: 100%;
+    background-color: #272822; 
+    color: #fff;
+}
+
+.btn, .btn-large {
+    box-shadow: none;
+    background-image: none;
+}

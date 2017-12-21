@@ -1,0 +1,54 @@
+
+#calendar-link {
+    font-size: 16px;
+}
+
+#calendar-div {
+    width : 950px;    
+}
+
+.smallCalendar {
+    width: 650px;
+    height: 450px;
+    border: 0;
+}
+
+.bigCalendar {
+    width: 1000px;
+    height: 750px;
+    border: 0;
+}
+
+.eventLink {
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+.eventDiv {
+    float: right;
+    clear: right;
+    margin-top: 20px;
+    margin-right: 0px;
+    width: 250px;
+    background-color: #e3e9ff;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 10px;
+    padding: 0px 10px 10px 10px;
+}
+
+.eventDiv a {
+    color: #20c;
+}
+
+#calendar-div p {
+    text-align: center;
+}
+
+#calendar-div h6 {
+    font-size: 16px;
+    font-weight: bold;
+    word-wrap: break-word;
+    text-align: center;
+}
+

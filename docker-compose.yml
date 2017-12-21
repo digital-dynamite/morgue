@@ -17,4 +17,4 @@ morgue:
   volumes:
     - ./example.json:/var/www/morgue/config/example.json
   hostname: morgue
-  domainname: morgue.yourdomain.com
+  domainname: morgue.digital-dynamite.xyz

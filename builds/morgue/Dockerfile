@@ -1,11 +1,10 @@
 FROM alpine:3.5
 
-MAINTAINER Antonino Abbate "ninoabbate@gmail.com"
-
 RUN apk --update add bash apache2 php5 php5-apache2 php5-curl php5-mysqli php5-openssl php5-json php5-phar php5-pdo php5-pdo_mysql postfix git
 
+ADD ./morgue /var/www/morgue
+
 RUN cd /var/www/ \
-  && git clone https://github.com/etsy/morgue.git morgue \
   && mv /var/www/morgue/config/example.json /var/www/morgue/config/example.json.orig \
   && mkdir -p /run/apache2 \
   && chgrp www-data /run/apache2 \

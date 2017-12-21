@@ -1,13 +1,13 @@
 {
-    "environment": "production",
-    "timezone": "UTC",
+    "environment": "development",
+    "timezone": "Europe/Zurich",
 
     "database":
-    {   "mysqlhost": "morguedb",
-        "mysqlport": "3306",
+    {  "mysqlhost": "localhost",
+        "mysqlport": 3306,
         "database": "morgue",
         "username": "morgue",
-        "password": "morgue"
+        "password": "morgue_password"
     },
 
 
@@ -23,8 +23,8 @@
     },
 
     "locking" :
-    { "editable_days": "120",
-      "lock_time": "0"
+    { "editable_days": 30,
+      "lock_time": 120
     },    
 
     "edit_page_features" : [
@@ -32,18 +32,21 @@
       "contact",
       "calendar",
       "summary",
+      "why_surprised",
       "images",
+      "irc",
       "jira",
       "links",
       "tags",
-      "history"
+      "history",
+      "upload"
     ],
     "feature": [
     {   "name": "anniversary",
         "enabled": "on",
         "navbar": "on",
-        "mailto": "morgue@digital-dynamite.xyz",
-        "mailfrom": "morgue@digital-dynamite.xyz",
+        "mailto": "me@example.com",
+        "mailfrom": "morgue@example.com",
         "custom_js_assets": ["anniversary.js"]
     },
 
@@ -53,8 +56,8 @@
 
     {   "name": "contact",
         "enabled": "on",
-        "lookup_url": null,
-        "email_domain": "digital-dynamite.xyz"
+        "lookup_url": "https://directory.example.com/user/%s",
+        "email_domain": "example.com"
     },
 
     {   "name": "calendar",
@@ -62,14 +65,13 @@
         "navbar" : "on",
         "custom_css_assets" : ["calendar.css"],
         "custom_js_assets" : ["calendar.js", "https://apis.google.com/js/client.js?onload=loadCal"],
-        "clientId" : "800094015689-oue82qk1qe75089vk2gr3ldpt5l5oqi1.apps.googleusercontent.com",
-        "apiKey" : "9UV31Gy-x62yDMXN4VH1JUQ8",
-        "apiKey2" : "AIzaSyBIbHBWbdpMjObUPs9XtKxijF2NRFVCwuQ",
+        "clientId" : "CLIENTID",
+        "apiKey" : "APIKEY",
         "scopes" : ["https://www.googleapis.com/auth/calendar"],
-        "id" : "digital-morgue",
-        "facilitator": "true",
-        "facilitators_email": ["morgue@digital-dynamite.xyz"],
-        "attendees_email": ["user1@yourcompany.com", "user2@yourcompany.com", "user3@yourcompany.com"]
+        "id" : "CALENDARID",
+        "facilitator": true,
+        "facilitators_email": ["facilitators@example.com"],
+        "attendees_email": ["attendees@example.com"]
     },
 
     {   "name": "summary",
@@ -82,15 +84,16 @@
     },
 
     {   "name": "irc",
-        "enabled": "off",
+        "enabled": "on",
         "channels": ["#ops"]
     },
 
     {   "name": "jira",
         "enabled": "on",
-        "baseurl": "https://digital-dynamite.atlassian.net",
-        "username": "jirausername",
-        "password": "jirapassword",
+        "baseurl": "https://jira.foo.com",
+        "username": "jira_morgue",
+        "password": "jira_morgue_password",
+        "proxy": "http://myproxy:8080",
         "additional_fields" : {
         }
     },
@@ -117,20 +120,20 @@
     },
 
     {   "name": "upload",
-        "enabled": "off",
+        "enabled": "on",
         "custom_js_assets": ["dropzone.min.js", "upload.js"],
         "custom_css_assets": ["dropzone.min.css"],
         "upload_driver_options": {
             "url": "http://my.server.home/",
             "username": "webdav",
             "password": "webdav",
-            "proxy": "false" 
+            "proxy": false 
         },
         "upload_driver": "webdav"
     },
 
     {   "name": "why_surprised",
-        "enabled": "off",
+        "enabled": "on",
         "custom_js_assets": ["why_surprised.js"]
     }
     ],

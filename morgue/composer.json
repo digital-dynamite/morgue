@@ -1,0 +1,15 @@
+{
+    "require": {
+        "slim/slim": "2.*",
+        "twig/twig": "1.*",
+         "wikimedia/composer-merge-plugin": "dev-master"
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "../morgue_features/composer.json",
+                "features/upload/composer.json"
+                ]
+        }
+    }
+}
